@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    object-fit: cover;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    border-bottom: 3px solid white;
+    padding: 5px 50px;
+
+    z-index: 1;
+}
+
+.date:focus{
+    outline: none;
+}
+
+.setbtn{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+}
+
+.setbtn:hover{
+    background-color: #CD6A2F;
+}
+
+.box-group{
+    display: flex;
+}
+
+.boxes{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    z-index: 2;
+
+    display: none;
+}
+
+.boxes span{
+    font-size: 1.5rem;
+}
+
+.wish{
+    display: none;
+    width: 500px;
+    padding: 10px 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1px;
+}
