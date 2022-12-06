@@ -14,16 +14,17 @@ body{
     background-attachment: fixed;
     object-fit: cover;
 
-    height: 100vh;
-    display: flex;
+    /* height: 100vh; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     margin: 0;
     overflow: hidden;
 }
 
 .container{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +67,6 @@ body{
     text-align: center;
     color: white;
     font-size: 2rem;
-    z-index: 2;
 
     display: none;
 }
@@ -82,4 +82,14 @@ body{
     text-align: center;
     letter-spacing: 1px;
     line-height: 1px;
+}
+
+@media (max-width: 320px) {
+    .boxes{
+        font-size: 1.5rem;
+    }
+
+    .boxes span{
+        font-size: 1rem;
+    }
 }
