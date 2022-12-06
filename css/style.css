@@ -7,7 +7,7 @@
 body{
     font-family: 'Inter', sans-serif;
 
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(./img/bg.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -30,7 +30,7 @@ body{
     align-items: center;
 }
 
-.date{
+/* .date{
     background-color: transparent;
     color: white;
     border: 0;
@@ -38,10 +38,25 @@ body{
     padding: 5px 50px;
 
     z-index: 1;
+} */
+
+/* .date:focus{
+    outline: none;
+} */
+
+input[type="datetime-local"]{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px groove #fff;
+    border-radius: 0;
 }
 
-.date:focus{
-    outline: none;
+input[type="datetime-local"]:before{
+    content: 'Set Timer Here.';
+    color: skyblue;
+    font-weight: bold;
+    text-align: center;
+    width:100%;
 }
 
 .setbtn{
@@ -55,7 +70,8 @@ body{
 }
 
 .setbtn:hover{
-    background-color: #CD6A2F;
+    background-color: skyblue;
+    color: white;
 }
 
 .box-group{
